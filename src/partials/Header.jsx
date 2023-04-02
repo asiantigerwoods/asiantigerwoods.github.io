@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../utils/Dropdown';
-import Icon from '../images/icon.svg'
+import Icon from '../images/obliqlogov1.png'
 
 function Header() {
 
@@ -40,7 +40,7 @@ function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={Icon} alt="Logo" width={40} height={40} />
+              <img src={Icon} alt="Logo" width={146.77} height={33.99} />
             </Link>
           </div>
 
