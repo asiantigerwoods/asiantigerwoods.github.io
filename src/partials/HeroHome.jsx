@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import Tilt from 'react-parallax-tilt';
 
 import HeroImage from '../images/pexels-zakaria-boumliha-2827392.jpg';
 
