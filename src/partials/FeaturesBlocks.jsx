@@ -53,7 +53,7 @@ function FeaturesBlocks() {
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" x="12" y="12"><path d="M527 976v-60q35-6 69-19.5t66-37.5l43 44q-40 30-85 48t-93 25Zm-90 0q-137-21-226-122t-89-241q0-75 28-140.5T227 358q49-49 114.5-77T482 253h20l-79-79 44-44 153 153-153 153-44-44 79-79h-20q-127 0-213.5 86.5T182 613q0 117 72.5 199.5T437 916v60Zm331-136-44-44q23-30 36.5-65t18.5-73h61q-7 51-25.5 97.5T768 840Zm72-272h-61q-5-35-18.5-70T724 430l44-43q29 40 47 85.5t25 95.5Z" fill='white'/></svg>
               </svg>
               <h4 className="h4 mb-2">Automate Progression</h4>
-              <p className="text-lg text-gray-400 text-center">Streamline progression effortlessly. AI will optimize lifting weight between days and calculate progressive overload based on progress.</p>
+              <p className="text-lg text-gray-400 text-center">Streamline progression effortlessly. AI will optimize lifting weight between days and calculate progressive overload based on prior lifts.</p>
             </div>
 
             {/* 5th item */}
@@ -63,7 +63,7 @@ function FeaturesBlocks() {
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" x="13" y="13"><path d="M559 959q-18 18-43.5 18T472 959L97 584q-10-10-13.5-21T80 540V236q0-26 17-43t43-17h304q12 0 24 3.5t22 13.5l373 373q19 19 19 44.5T863 655L559 959Zm-41-41 304-304-378-378H140v304l378 378ZM245 392q21 0 36.5-15.5T297 340q0-21-15.5-36.5T245 288q-21 0-36.5 15.5T193 340q0 21 15.5 36.5T245 392ZM140 236Z" fill='white'/></svg>
               </svg>
               <h4 className="h4 mb-2">Monetize Your Services</h4>
-              <p className="text-lg text-gray-400 text-center">One-stop shop for trainers, bodybuilders, and influencers to host your routines. Say bye to upkeeping a personal website and collecting payments from your clients.</p>
+              <p className="text-lg text-gray-400 text-center">One-stop shop for trainers, bodybuilders, and influencers to host your routines. No need to upkeep a personal website and handle payments from your clients anymore.</p>
             </div>
 
             {/* 6th item */}
@@ -73,7 +73,7 @@ function FeaturesBlocks() {
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" x="12" y="12"><path d="M480 976q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 83-31.5 156T763 859q-54 54-127 85.5T480 976Zm0-60q142.375 0 241.188-98.812Q820 718.375 820 576q0-60.662-21-116.831Q778 403 740 357L261 836q45 39 101.493 59.5Q418.987 916 480 916ZM221 795l478-478q-46-39-102.169-60T480 236q-142.375 0-241.188 98.812Q140 433.625 140 576q0 61.013 22 117.506Q184 750 221 795Z" fill='white'/></svg>
               </svg>
               <h4 className="h4 mb-2">No More BS</h4>
-              <p className="text-lg text-gray-400 text-center">Forget about your old exercise app's price gouging tactics. No ads, no hidden fees, no required subscriptions, no limits. Free to download.</p>
+              <p className="text-lg text-gray-400 text-center">Say goodbye to price-gouging exercise apps. Obliq has no ads, no hidden fees, no required subscriptions, and no limits - all completely free to download.</p>
             </div>
 
           </div>
