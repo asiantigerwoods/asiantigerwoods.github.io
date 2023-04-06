@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 
-import HeroImage from '../images/hero-image-02.jpg';
+import HeroImage from '../images/pexels-zakaria-boumliha-2827392.jpg';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -33,42 +33,35 @@ function HeroHome() {
         </div>
 
         {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Revolutionizing Your Fitness Journey
-            </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-              Find. Share. Connect.
-            </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-green-200 hover:bg-green-100 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                  Sign Up Now
-                </a>
-              </div>
-              {/* <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">
-                  Learn more
-                </a>
-              </div> */}
-            </div>
-          </div>
-
+        <div className="relative pt-32 pb-10">
           {/* Hero image */}
           <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto" src={HeroImage} width="1024" height="504" alt="Hero" />
-              
-            </div>
-
-            {/* Modal */}
-            <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-              <div className="relative pb-9/16">
-                <iframe className="absolute w-full h-full" src="https://player.vimeo.com/video/174002812" title="Video" allowFullScreen></iframe>
+              <img style={{borderRadius: 5}} className="mx-auto" src={HeroImage} width="100%" height="100%" alt="Hero" />
+              <div style={{borderRadius: 5, position: 'absolute', height: '100%', width: '100%', backgroundColor: 'black', opacity: 0.5}}/>
+              <div 
+                style={{position: 'absolute'}}
+                className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+                <h1 className="h1 mb-4" data-aos="fade-up">
+                  Optimize Your Fitness Journey
+                </h1>
+                <p className="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
+                  Efficient, Effective, and Easy.
+                </p>
+                <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+                  <div data-aos="fade-up" data-aos-delay="400">
+                    <a style={{borderRadius: 40}} className="btn text-white bg-gray-500 hover:bg-gray-600 w-full mb-4 sm:w-auto sm:mb-0" href="#preview">
+                      Learn more
+                    </a>
+                  </div>
+                  <div data-aos="fade-up" data-aos-delay="600">
+                    <a style={{borderRadius: 40}} className="btn text-white bg-green-200 hover:bg-green-300 w-full mb-4 sm:w-auto sm:ml-4" href="#signup">
+                      Sign Up Now
+                    </a>
+                  </div>
+                </div>
               </div>
-            </Modal>
+            </div>
           </div>
         </div>
       </div>

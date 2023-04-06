@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../utils/Dropdown';
-import Icon from '../images/obliqlogov1.png'
+import Icon from '../images/obliq.svg'
 
 function Header() {
 

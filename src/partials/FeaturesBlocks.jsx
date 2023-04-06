@@ -3,7 +3,7 @@ import React from 'react';
 function FeaturesBlocks() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div id="preview" className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
           {/* Section header */}
@@ -73,7 +73,7 @@ function FeaturesBlocks() {
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40" x="12" y="12"><path d="M480 976q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 83-31.5 156T763 859q-54 54-127 85.5T480 976Zm0-60q142.375 0 241.188-98.812Q820 718.375 820 576q0-60.662-21-116.831Q778 403 740 357L261 836q45 39 101.493 59.5Q418.987 916 480 916ZM221 795l478-478q-46-39-102.169-60T480 236q-142.375 0-241.188 98.812Q140 433.625 140 576q0 61.013 22 117.506Q184 750 221 795Z" fill='white'/></svg>
               </svg>
               <h4 className="h4 mb-2">No More BS</h4>
-              <p className="text-lg text-gray-400 text-center">No ads, no hidden fees, no required subscriptions, no limits. Free to download.</p>
+              <p className="text-lg text-gray-400 text-center">Forget about your old exercise app's price gouging tactics. No ads, no hidden fees, no required subscriptions, no limits. Free to download.</p>
             </div>
 
           </div>
