@@ -9,6 +9,7 @@ function Newsletter() {
 
     // Check email with regex
     if (!val.match(/[^@]+@[^@]+\.[^@]+/)) {
+      setSuccess(false);
       setError('Please enter a valid email address.');
       return;
     }
