@@ -1,23 +1,33 @@
 import React from 'react';
 
 function Newsletter() {
+  const [success, setSuccess] = React.useState(false);
+  const [error, setError] = React.useState('');
+
   const onPress = () => {
     const val = document.querySelector('input').value;
-    fetch(`https://5cfqbpx5643f4hnnksmrr5tute0nsfgy.lambda-url.us-west-1.on.aws/`, {
-      method: 'Post',
-      mode: 'cors',
+
+    // Check email with regex
+    if (!val.match(/[^@]+@[^@]+\.[^@]+/)) {
+      setError('Please enter a valid email address.');
+      return;
+    }
+
+    fetch(`https://l75b234tbxayualu67eu5dxl2q0tobau.lambda-url.us-west-1.on.aws/`, {
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
         email: val,
-      }),
+      },
     })
       .then((res) => res.json())
       .then((res) => {
-        if (res.err) {
-          alert(res.err);
+        if (res.error) {
+          setError(res.body)
+          return;
         }
+        setSuccess(true);
+        document.querySelector('input').value = '';
       });
   }
 
@@ -52,11 +62,20 @@ function Newsletter() {
             {/* CTA form */}
             <form className="w-full lg:w-1/2">
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input type="email" className="w-full appearance-none bg-green-300 border border-green-300 focus:border-green-200 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-300" placeholder="Your email…" aria-label="Your email…" />
-                <a className="btn text-green-200 bg-green-100 hover:bg-white shadow" style={{cursor: 'pointer'}} onClick={onPress}>Subscribe</a>
+                <input onChange={() => {
+                  setError('');
+                  setSuccess(false);
+                }} type="email" className="w-full appearance-none bg-green-300 border border-green-300 focus:border-green-200 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-300" placeholder="Your email…" aria-label="Your email…" />
+                <a className="btn text-gray-100 bg-green-100 hover:bg-white hover:text-green-100 shadow" style={{cursor: 'pointer'}} onClick={onPress}>Subscribe</a>
               </div>
               {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
+              {success &&
+                <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p>
+              }
+              {/* Error message */}
+              {error &&
+                <p style={{color: 'red'}} className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">{error}</p>
+              }
             </form>
 
           </div>
