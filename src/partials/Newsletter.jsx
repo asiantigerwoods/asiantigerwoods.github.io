@@ -5,11 +5,13 @@ function Newsletter() {
   const [error, setError] = React.useState('');
 
   const onPress = () => {
+    setSuccess(false);
+    setError('');
+    
     const val = document.querySelector('input').value;
 
     // Check email with regex
     if (!val.match(/[^@]+@[^@]+\.[^@]+/)) {
-      setSuccess(false);
       setError('Please enter a valid email address.');
       return;
     }
