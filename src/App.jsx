@@ -11,6 +11,8 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Post from './pages/Post';
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/blog/:id" element={<Post />} />
         <Route path='*' element={<NotFound />}/>
       </Routes>
     </>

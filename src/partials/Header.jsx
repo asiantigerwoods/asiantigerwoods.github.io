@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../utils/Dropdown';
 import Icon from '../images/obliq.svg'
 
 function Header() {
@@ -45,18 +44,18 @@ function Header() {
           </div>
 
           {/* Desktop navigation */}
-          {/* <nav className="hidden md:flex md:grow">
+          <nav className="hidden md:flex md:grow">
 
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link to="/signin" className="font-medium text-green-200 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <Link to="/blog" className="font-medium text-green-200 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/signup" className="btn-sm text-white bg-green-200 hover:bg-green-300 ml-3">Sign up</Link>
-              </li>
+              </li> */}
             </ul>
 
-          </nav> */}
+          </nav>
 
           {/* Mobile menu */}
           <div className="md:hidden">

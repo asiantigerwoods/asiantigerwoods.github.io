@@ -7,7 +7,6 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Roadmap from '../partials/Roadmap';
 import Newsletter from '../partials/Newsletter';
-import Banner from '../partials/Banner';
 import Footer from '../partials/Footer';
 
 function Home() {
