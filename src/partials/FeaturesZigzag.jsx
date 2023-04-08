@@ -72,7 +72,7 @@ function FeaturesZigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-green-200 mb-2">More digestable information. Less confusion</div>
-                  <h3 className="h3 mb-3">Database of workouts.</h3>
+                  <h3 className="h3 mb-3">Database of workouts</h3>
                   <p className="text-xl text-gray-400 mb-4">Browse for pre-made routines or custom routines.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
