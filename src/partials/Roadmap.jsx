@@ -33,7 +33,7 @@ function Roadmap() {
                 <h4 className="h4 mb-4">The social update</h4>
                 <blockquote className="text-lg text-gray-400 grow">You've been using the app to make your routines, now it's time to show them off to your friends. In the second release you can make your own profile, follow friends, and share your routines and progress with your followers.</blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Version 2</cite> - <a className="text-green-200 hover:text-gray-200 transition duration-150 ease-in-out">September 2023</a>
+                  <cite className="text-gray-200 not-italic">Version 2</cite> - <a className="text-green-200 hover:text-gray-200 transition duration-150 ease-in-out">Fall 2023</a>
                 </div>
               </div>
             </Tilt>
