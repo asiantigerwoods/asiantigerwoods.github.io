@@ -1,8 +1,8 @@
 Welcome
 
-Hey, we're Obliq!
+We're excited to lead you on your fitness journey
 
-# We're excited to lead you on your fitness journey
+# Hey, we're Obliq!
 
 Obliq is made up of six people with the goal to provide an enhanced experience while working out. We know how annoying it is to use spreadsheets, pencil & paper, and even your memory to keep track of your workout and progress. Our plan to fix this is through a free app that fits in your pocket!
 
