@@ -18,7 +18,7 @@ export default () => {
 
             let posts = []
             for (let i = 0; i < files.length; i++) {
-                let postFile = await fetch(`/posts/${files[i]}.md`);
+                let postFile = await fetch(`posts/${files[i]}.md`);
                 postFile = await postFile.text();
                 posts.push(postFile)
             }
