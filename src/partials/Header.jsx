@@ -1,9 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Icon from '../images/obliq.svg'
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Icon from "../images/logo2.svg";
 
 function Header() {
-
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
@@ -13,11 +12,16 @@ function Header() {
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return;
-      if (!mobileNavOpen || mobileNav.current.contains(target) || trigger.current.contains(target)) return;
+      if (
+        !mobileNavOpen ||
+        mobileNav.current.contains(target) ||
+        trigger.current.contains(target)
+      )
+        return;
       setMobileNavOpen(false);
     };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
+    document.addEventListener("click", clickHandler);
+    return () => document.removeEventListener("click", clickHandler);
   });
 
   // close the mobile menu if the esc key is pressed
@@ -26,64 +30,34 @@ function Header() {
       if (!mobileNavOpen || keyCode !== 27) return;
       setMobileNavOpen(false);
     };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
+    document.addEventListener("keydown", keyHandler);
+    return () => document.removeEventListener("keydown", keyHandler);
   });
 
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={Icon} alt="Logo" width={146.77} height={33.99} />
+              <img src={Icon} alt="Logo" width={85 * 1.2} height={29 * 1.2} />
             </Link>
           </div>
 
-          {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
-
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link to="/blog" className="font-medium text-green-200 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Blog</Link>
+                <Link
+                  to="/blog"
+                  className="font-medium text-green-200 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  Blog
+                </Link>
               </li>
-              {/* <li>
-                <Link to="/signup" className="btn-sm text-white bg-green-200 hover:bg-green-300 ml-3">Sign up</Link>
-              </li> */}
             </ul>
-
           </nav>
-
-          {/* Mobile menu */}
-          <div className="md:hidden">
-
-            {/* Hamburger button */}
-            {/* <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-              <span className="sr-only">Menu</span>
-              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" rx="1" />
-                <rect y="11" width="24" height="2" rx="1" />
-                <rect y="18" width="24" height="2" rx="1" />
-              </svg>
-            </button> */}
-
-            {/*Mobile navigation */}
-            {/* <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
-              <ul className="bg-gray-800 px-4 py-2">
-                <li>
-                  <Link to="/signin" className="flex font-medium w-full text-green-200 hover:text-gray-200 py-2 justify-center">Sign in</Link>
-                </li>
-                <li>
-                  <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-green-200 hover:bg-green-100 transition duration-150 ease-in-out">Sign up</Link>
-                </li>
-              </ul>
-            </nav> */}
-
-          </div>
-
         </div>
       </div>
     </header>

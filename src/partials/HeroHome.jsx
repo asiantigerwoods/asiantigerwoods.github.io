@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Tilt from 'react-parallax-tilt';
+import React, { useState } from "react";
+import Tilt from "react-parallax-tilt";
 
-import HeroImage from '../images/pexels-zakaria-boumliha-2827392.jpg';
+import HeroImage from "../images/pexels-zakaria-boumliha-2827392.jpg";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -16,9 +16,23 @@ function HeroHome() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="max-w-full"
+            width="564"
+            height="552"
+            viewBox="0 0 564 552"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <defs>
-              <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="illustration-02"
+                x1="-3.766"
+                y1="300.204"
+                x2="284.352"
+                y2="577.921"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#7EDFAB" stopOpacity=".01" />
                 <stop offset="1" stopColor="#7EDFAB" stopOpacity=".32" />
               </linearGradient>
@@ -36,26 +50,59 @@ function HeroHome() {
         <div className="relative pt-32 pb-10">
           {/* Hero image */}
           <div>
-            <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img style={{borderRadius: 5}} className="mx-auto" src={HeroImage} width="100%" height="100%" alt="Hero" />
-              <div style={{borderRadius: 5, position: 'absolute', height: '100%', width: '100%', backgroundColor: 'black', opacity: 0.5}}/>
-              <div 
-                style={{position: 'absolute'}}
-                className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <div
+              className="relative flex justify-center items-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                style={{ borderRadius: 5, minHeight: 500, objectFit: "cover" }}
+                className="mx-auto"
+                src={HeroImage}
+                width="100%"
+                height="100%"
+                alt="Hero"
+              />
+              <div
+                style={{
+                  borderRadius: 5,
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  backgroundColor: "black",
+                  opacity: 0.7,
+                }}
+              />
+              <div
+                style={{ position: "absolute" }}
+                className="max-w-3xl mx-auto text-center pb-12 md:pb-16"
+              >
                 <h1 className="h1 mb-4" data-aos="fade-up">
                   Optimize Your Fitness Journey
                 </h1>
-                <p className="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
+                <p
+                  className="text-xl text-gray-300 mb-8"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   Efficient, Effective, and Easy.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div data-aos="fade-up" data-aos-delay="400">
-                    <a style={{borderRadius: 40}} className="btn text-white bg-gray-500 hover:bg-gray-600 w-full mb-4 sm:w-auto sm:mb-0" href="#preview">
+                    <a
+                      style={{ borderRadius: 40 }}
+                      className="btn text-white bg-gray-500 hover:bg-gray-600 w-full mb-4 sm:w-auto sm:mb-0"
+                      href="#preview"
+                    >
                       Learn more
                     </a>
                   </div>
                   <div data-aos="fade-up" data-aos-delay="600">
-                    <a style={{borderRadius: 40}} className="btn text-white bg-green-200 hover:bg-green-300 w-full mb-4 sm:w-auto sm:ml-4" href="#signup">
+                    <a
+                      style={{ borderRadius: 40 }}
+                      className="btn text-white bg-green-200 hover:bg-green-300 w-full mb-4 sm:w-auto sm:ml-4"
+                      href="#signup"
+                    >
                       Sign Up Now
                     </a>
                   </div>
