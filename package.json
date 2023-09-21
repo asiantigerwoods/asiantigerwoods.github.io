@@ -6,7 +6,8 @@
     "dev": "npm run buildPaths && vite",
     "build": "npm run buildPaths && vite build",
     "preview": "vite preview",
-    "buildPaths": "node ./buildPaths.js"
+    "buildPaths": "node ./buildPaths.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.1"
